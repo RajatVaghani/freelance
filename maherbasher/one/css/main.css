@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,800');
+
+
+body
+{
+background: #ffffff url('../img/page-bg.png') top center repeat-x;
+margin: 0 0 0 0;
+padding: 0px;
+font-family: 'Exo', sans-serif;
+font-size: 20px;
+}
+.tiny
+{
+  height: 0px;
+  width: 0px;
+}
+
+img{
+  border:none;
+}
+
+img a{
+  border:none;
+}
+
+  .container
+  {
+    background: #3a3a3a;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 680px;
+    text-align: center;
+    margin-top: 0px;
+    border-radius: 3px;
+  }
+
+  .header
+  {
+    height: 100px;
+    width: 100%;
+    background: url('../img/logo.png') top center no-repeat;
+  }
+
+
+  .preform
+  {
+    font-size: 2.5em;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .preform
+  {
+    font-size: 1.6em;
+    margin-top: 0px;
+    margin-bottom: -10px;
+  }
+  .form
+  {
+
+  }
+  .headline
+  {
+    height: 150px;
+    font-size: 3.3em;
+    font-weight: 800;
+    line-height: 1.3em;
+    color: #fed994;
+  }
+
+
+  .textanim
+  {
+    -webkit-animation: resize 1s ease infinite;
+    animation: resize 1s ease infinite;
+    transform: scale(1);
+  }
+
+@-webkit-keyframes resize {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(0.85);}
+    100% {transform: scale(1);}
+}
+
+@keyframes resize {
+  0%   {transform: scale(1);}
+  50%  {transform: scale(0.85);}
+  100% {transform: scale(1);}
+}
+
+.inputblock
+{
+  width:320px;
+  text-align: left;
+  padding: 20px 20px 0px 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  color: #fed994;
+  font-size: 0.9em;
+  line-height: 0.8em;
+  vertical-align: top;
+}
+
+input[type=text]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border:2px solid #fed994;
+    font-size: 16px;
+    box-shadow: 0px 1px 2px #041d30 inset;
+}
+
+input[type=checkbox]
+{
+    width: 20px;
+    height: 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border:none;
+}
+
+.nolabel
+{
+  height: 13px;
+  display: block;
+}
+
+.checkbox
+{
+  display: table-cell;
+  vertical-align: top;
+
+}
+
+.accept
+{
+  width: 260px;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  padding: 5px 5px 0px 5px;
+  color: #fed98e;
+  box-sizing: border-box;
+  text-align: left;
+  display: table-cell;
+  vertical-align:bottom;
+}
+
+.button
+{
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 75%;
+  font-size: 2.4em;
+  line-height: 1.6em;
+  padding: 5px 25px 5px 25px;
+  background: #0b961a;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  border: 0px solid #000;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+  font-family: 'Exo', sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.footer
+{
+  margin: 0 auto;
+  width: 100%;
+  min-height: 30px;
+  max-width: 680px;
+  text-align: center;
+  position: relative;
+  background: #3a3a3a;
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+
+  body
+  {
+  font-size: 20px;
+  }
+
+  .container {
+    box-shadow: none;
+  }
+
+    .header
+    {
+
+    }
+
+
+
+
+    .preform
+    {
+      font-size: 2.0em;
+      padding: 30px;
+      margin-top: 10px;
+    }
+
+    .preform
+    {
+      font-size: 1.6em;
+      margin-top: 0px;
+      margin-bottom: -20px;
+    }
+
+    .headline
+    {
+      font-size: 2.4em;
+      height: 80px;
+      line-height: 1.1em;
+    }
+
+
+    .textanim
+    {
+      -webkit-animation: resize 1s ease infinite;
+      animation: resize 1s ease infinite;
+      transform: scale(1);
+    }
+
+  @-webkit-keyframes resize {
+      0%   {transform: scale(1);}
+      50%  {transform: scale(0.9);}
+      100% {transform: scale(1);}
+  }
+
+  @keyframes resize {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(0.9);}
+    100% {transform: scale(1);}
+  }
+
+.inputblock
+{
+margin: 0 auto;
+  display: block;
+}
+
+
+  .nolabel
+  {
+    height: 0px;
+    display: block;
+  }
+
+  .checkbox
+  {
+    display: table-cell;
+    vertical-align: top;
+
+  }
+
+  .accept
+  {
+    width: 260px;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    padding: 5px 5px 0px 5px;
+    box-sizing: border-box;
+    text-align: left;
+    display: table-cell;
+    vertical-align:bottom;
+  }
+
+  .button
+  {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 280px;
+    font-size: 1.4em;
+
+  }
+
+  .footer
+  {
+    min-height: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 440px) {
+
+  body
+  {
+
+  font-size: 22px;
+  }
+
+
+
+
+    .header
+    {
+      height: 100px;
+    }
+
+
+
+
+    .preheader, .preform
+    {
+      font-size: 1.5em;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .preform
+    {
+      font-size: 0.9em;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+
+    .headline
+    {
+      font-size: 1.8em;
+      height: 80px;
+      margin-top: -10px;
+    }
+
+    .textanim
+    {
+      -webkit-animation: none;
+      animation: none;
+    }
+
+    .inputblock
+    {
+      padding: 10px 20px 0px 20px;
+      box-sizing: border-box;
+      display: inline-block;
+      color: #ffffff;
+      font-size: 0.8em;
+      line-height: 0.6em;
+      vertical-align: top;
+    }
+
+
+
+  .button
+  {
+    margin-top: 15px;
+  }
+
+  .footer
+  {
+    min-height: 60px;
+  }
+}

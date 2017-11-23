@@ -1,0 +1,36 @@
+.overlay{
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 0%;
+  height: 0%;
+  transition: 0.5s;
+  background: rgba(0,0,0,0.75);
+  z-index: 1000;
+  overflow:hidden;
+}
+
+.spin {
+  background: url(../img/loader.gif) center center no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  margin-left: -50px;
+  margin-top: -100px;
+    -webkit-animation: spin 0.8s linear infinite;
+    animation: spin .8s linear infinite;
+  }
+
+@-webkit-keyframes spin {
+  0%   {transform: rotate(0deg);}
+  50%  {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes rspin {
+  0%   {transform: rotate(0deg);}
+  50%  {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
