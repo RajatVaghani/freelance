@@ -1,0 +1,8 @@
+Must Standard Email Signature Size
+Must include our logo and icons
+www.facebook.com/CicUsa (Use this link to all social icons)
+Must be Responsive
+Font should be : Trebuchet MS
+Must be fully editable, I should be able to change fonts, icons later in html file. I'm not a pro in HTML, So you should design it with care. include comment tags in html files
+
+This will be updated If Our manager needs any changes! 
