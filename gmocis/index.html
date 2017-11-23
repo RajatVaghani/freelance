@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Colormatch</title>
+
+    <!-- Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ 
+  </head>
+  
+  <body>
+		
+		<div id="canvas-wrap">
+		  <canvas id="myCanvas" width="1000px" height="650px"></canvas>
+		  <div id="overlay">
+		  	<h1 style="text-align:center;">Colormatch</h1><br/>
+		  	<div class="col-md-6 col-xs-6">
+		        <div id="0" colo="" class="box" onclick="registerclick('0')"></div>
+		        <div id="1" colo="" class="box" onclick="registerclick('1')"></div>
+		        <div id="2" colo="" class="box" onclick="registerclick('2')"></div>
+		        <div id="3" colo="" class="box" onclick="registerclick('3')"></div>
+		    </div>
+		    <div class="col-md-6 col-xs-6">
+		        <div id="0r" colo="" class="box" onclick="registerclick('0r')"></div>
+		        <div id="1r" colo="" class="box" onclick="registerclick('1r')"></div>
+		        <div id="2r" colo="" class="box" onclick="registerclick('2r')"></div>
+		        <div id="3r" colo="" class="box" onclick="registerclick('3r')"></div>
+		    </div>
+			<br/>
+			<button id="btnresult" class="btn btn-primary" onclick="getresult()" style="margin:10px auto;visibility:hidden">RESULT</button>
+		  </div>
+		</div>
+		
+		
+		
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+
+	var colors = ["RED","BLUE","GREEN","YELLOW"]
+	var leftside = ["0","1","2","3"];
+	var rightside = ["0r","1r","2r","3r"];
+	
+	for(i=0;i<4;i++){
+		var item = colors[Math.floor(Math.random()*colors.length)];
+		console.log(item);
+		
+		var leftbox = leftside[Math.floor(Math.random()*leftside.length)];
+		document.getElementById(leftbox).style="background:"+item;
+		document.getElementById(leftbox).setAttribute("colo",item);
+		var ind = leftside.indexOf(leftbox);
+		leftside.splice(ind,1);
+		
+		
+		var rightbox = rightside[Math.floor(Math.random()*rightside.length)];
+		document.getElementById(rightbox).innerHTML=""+item;
+		document.getElementById(rightbox).setAttribute("colo",item);
+		document.getElementById(rightbox).style="background:white";
+		ind = rightside.indexOf(rightbox);
+		rightside.splice(ind,1);
+		
+		var index = colors.indexOf(item);
+		colors.splice(index, 1);
+	}
+	
+	var click=1;
+	var pos1_a,pos1_b;
+	var pos2_a,pos2_b;
+	var div1,div2;
+	
+	var clicksdone=[""];
+	var marks=0;
+	var corrects=0;
+	
+	function registerclick(block){
+		if(click==1){
+			if(clicksdone.indexOf(block)==-1){
+				var bl = document.getElementById(block);
+				bl.setAttribute("class", "selectedbox");
+				div1 = block;
+				clicksdone.push(div1);
+				var myDivsPosition = $(bl).offset();
+				pos1_a = myDivsPosition.left;
+				pos1_b = myDivsPosition.top;
+				click=2;
+			}
+		}else if(click==2){
+			if(clicksdone.indexOf(block)==-1){
+				if(div1=="0" || div1=="1" || div1=="2" || div1=="3"){
+					if(block=="0r" || block=="1r" || block=="2r" || block=="3r"){
+						var bl2 = document.getElementById(block);
+						bl2.setAttribute("class", "selectedbox");
+						div2 = block;
+						clicksdone.push(div2);
+						var myDivsPosition2 = $(bl2).offset();
+						pos2_a = myDivsPosition2.left;
+						pos2_b = myDivsPosition2.top;
+						console.log(pos1_a+","+pos1_b + " to "+pos2_a+","+pos2_b);
+						var c = document.getElementById("myCanvas");
+						var ctx = c.getContext("2d");
+						ctx.beginPath();
+						ctx.moveTo(pos1_a+10,pos1_b+48);
+						ctx.lineTo(pos2_a+10,pos2_b+48);
+						ctx.stroke();
+						click=1;
+						marks++;
+						
+						pt1 = document.getElementById(div1);
+						classone = pt1.getAttribute("colo");
+						pt2 = document.getElementById(div2);
+						classtwo = pt2.getAttribute("colo");
+						if(classone==classtwo){
+							corrects++;
+						}
+						console.log(classone);
+												
+						if(marks==4){
+							document.getElementById("btnresult").style="visibility:visible;margin-bottom:10px;";
+						}
+					}
+				}else{
+					if(block=="0" || block=="1" || block=="2" || block=="3"){
+						var bl2 = document.getElementById(block);
+						bl2.setAttribute("class", "selectedbox");
+						div2 = block;
+						clicksdone.push(div2);
+						var myDivsPosition2 = $(bl2).offset();
+						pos2_a = myDivsPosition2.left;
+						pos2_b = myDivsPosition2.top;
+						console.log(pos1_a+","+pos1_b + " to "+pos2_a+","+pos2_b);
+						var c = document.getElementById("myCanvas");
+						var ctx = c.getContext("2d");
+						ctx.beginPath();
+						ctx.moveTo(pos1_a+10,pos1_b+48);
+						ctx.lineTo(pos2_a+10,pos2_b+48);
+						ctx.stroke();
+						click=1;
+						marks++;
+						
+						pt1 = document.getElementById(div1);
+						classone = pt1.getAttribute("colo");
+						pt2 = document.getElementById(div2);
+						classtwo = pt2.getAttribute("colo");
+						if(classone==classtwo){
+							corrects++;
+						}
+						
+						if(marks==4){
+							document.getElementById("btnresult").style="visibility:visible;margin-bottom:10px;";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	function getresult(){
+		window.location="result.php?result="+corrects;
+	}
+
+	</script>
+	
+  </body>
+</html>
