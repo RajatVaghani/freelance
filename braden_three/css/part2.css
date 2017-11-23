@@ -1,0 +1,47 @@
+.insurance{
+    text-align: center;
+    color: #72789a;
+    font-size: 30px;
+    padding-bottom: 10px;
+    line-height: 40px;
+}
+
+.fusion-imageframe {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.imageframe-align-center {
+    text-align: center;
+}
+.fusion-spacing-no.fusion-one-fifth {
+    width: 20%;
+}
+.fusion-layout-column {
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.fusion-clearfix {
+    clear: both;
+    zoom: 1;
+}
+.fusion-one-full {
+    float: none;
+}
+
+
+#main .fullwidth-box .fusion-row {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.fusion-imageframe img {
+    border-style: none;
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}

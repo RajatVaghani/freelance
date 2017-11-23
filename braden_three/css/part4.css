@@ -1,0 +1,132 @@
+.about{
+    padding-bottom: 30px;
+}
+
+.title2 {
+    font-size: 30px;
+    color: #626262;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title2 h1 {
+    font-size: 30px;
+    color: #626262;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about p {
+    color: #838181;
+    line-height: 2.143;
+}
+
+.about .more {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #5286c1;
+    font-weight: 600;
+    position: relative;
+    padding-top: 35px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.about ul {
+    margin: 50px 0;
+}
+
+.about ul li i {
+    display: block;
+    width: 40px;
+    height: 70px;
+    background: url(../images/spec.png) no-repeat;
+    margin: 0 auto;
+}
+
+.about ul li span {
+    display: block;
+    font-size: 18px;
+    color: #626262;
+    font-weight: 700;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.get-support {
+    padding: 50px 0;
+    background: url(http://findingtreatmentnow.com/wp-content/themes/rehab/img/bg-get-support.png) no-repeat top center;
+    background-size: cover;
+    text-align: center;
+}
+
+.get-support .title-support {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.get-support p {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.get-support p span, .get-support p a {
+    font-family: Verdana;
+    font-size: 24px;
+    color: #ffbb42;
+    font-weight: 700;
+
+}
+
+.state-block {
+    padding: 75px 0;
+    background: #fbfbfb url(http://findingtreatmentnow.com/wp-content/themes/rehab/img/bg-map.png) no-repeat center 150px;
+}
+
+.posts {
+    padding: 50px 0;
+}
+
+.more:before {
+    content: '';
+    display: block;
+    border-top: 1px solid #5286c1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.more:after {
+    content: '';
+    display: block;
+    width: 54px;
+    height: 29px;
+    background: url(http://findingtreatmentnow.com/wp-content/themes/rehab/img/more-arrow.jpg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -27px;
+}
+
+.about ul li+li i {
+    width: 58px;
+    background-position: -40px 0px;
+}
+
+.about ul li+li+li i {
+    width: 68px;
+    background-position: -98px 0px;
+}

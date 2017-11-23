@@ -1,0 +1,171 @@
+.contact-phone {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #124E78;
+}
+
+.contact-phone .container {
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-phone h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Roboto, sans-serif;
+    font-size: 42px;
+    line-height: 53px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.bottom-call-p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.number-hero {
+    margin-top: 0px;
+    border-bottom: 3px dotted #fff;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-phone a:active, .contact-phone a:hover {
+    outline: 0;
+}
+
+.number-hero.bottom {
+    font-size: 50px;
+    line-height: 60px;
+}
+
+
+.section.section-gray {
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 0px;
+    background-color: #fff;
+}
+
+.w-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+}
+
+.form-wrapper.squeezed {
+    padding-right: 19%;
+    padding-left: 19%;
+}
+
+.w-form {
+    margin: 0 0 15px;
+}
+
+.form-intro {
+    margin-bottom: 12px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    font-weight: 400;
+}
+.w-container .w-row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.w-input, .w-select {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.w-form .button {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: #cf404d;
+    -webkit-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    color: #fff;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.w-form .button.full-width {
+    display: block;
+    width: 100%;
+    border-style: none;
+    background-color: #FFCE00;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+
+.success-message {
+    text-align: center;
+}
+
+.w-form-done {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #dddddd;
+}
+
+.w-form-fail {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffdede;
+}
+
+.form-field {
+    min-height: 45px;
+    margin-right: 1px;
+    margin-bottom: 17px;
+    border: 1px solid #25ccbf;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(64, 64, 71, .3);
+    font-family: Roboto, sans-serif;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+
+    .form-wrapper.squeezed {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+}
+
+
+.footer{
+    background: #30C5FF;
+    height: 130px;
+}

@@ -1,0 +1,275 @@
+body{
+    padding-top: 50px;
+}
+
+.navbar-default {
+    background-color: #30C5FF;
+    border-color: #30C5FF;
+}
+
+
+/*jumbotron*/
+.jumbotron{
+ 	position: relative;
+ 	z-index:1;
+ 	min-height:600px;
+ 	text-align: center;
+ 	color: #ffffff;
+ 	margin-bottom: 0;
+ 	background-color: #a2c0f3;
+ 	padding: 0;
+}
+.jumbotron .container{
+	z-index: 4;
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 80px;
+}
+#video-background {
+	position: fixed;
+    top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	transform: translate(-50%, -60%);
+	z-index: 2;
+}
+
+#overlay {
+  	position: absolute;
+    top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 120%;
+	width: auto;
+	height: auto;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	opacity: .8;
+    background: url('../img/overlay.png') repeat 0 0;
+}
+.jumbotron h1,
+.jumbotron .h1{
+	font-weight: 700;
+}
+.jumbotron h2,
+.jumbotron .h2{
+	font-weight: 400;
+	color: #ffffff;
+	font-size: 24px;
+}
+.jumbotron .cta{ max-width:420px; margin:20px auto 0 auto; }
+.jumbotron .cta div{clear: both;}
+.jumbotron .text{
+	color: white;
+	font-size: 1.24em;
+	font-weight: 400;
+	padding: 12px 20px;
+}
+.jumbotron .cta div.phone{
+	background: #FFCE01;
+	color: white;
+	border-radius: 40px;
+	font-size: 1.8em;
+	font-weight: 900;
+	width: auto;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+.jumbotron .cta div.phone .clickable,
+.jumbotron .cta div.phone .clickable a{color: #ffffff;}
+p.proof{
+	font-size: 1.24em;
+	clear: both;
+	padding: 40px 0 0 0;
+	font-weight: 400;
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
+}
+p.proof i{font-size: .75em;}
+p.proof a:link,
+p.proof a:visited{
+	color: #ffffff;
+	text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    /*padding-top: 38px;
+    padding-bottom: 0px;*/
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+	.jumbotron{
+		max-height: 550px;
+		min-height: 550px;
+	}
+	#video-background-mobile {
+		position: absolute;
+		width: 100%;
+		min-height: 550px;
+		z-index: 2;
+		background: #a2c0f3 url(../img/promises-mobile.jpg) center bottom no-repeat;
+		background-size: 100% auto;
+	}
+	.jumbotron .container{
+		padding-top: 60px;
+	}
+	#overlay{
+		display: none;
+	}
+	#video-background{display: none;}
+	.jumbotron h1,
+	.jumbotron .h1 {
+    	font-size: 28px;
+    	margin-bottom: 0;
+  	}
+	.jumbotron h2,
+	.jumbotron .h2,
+	.jumbotron .text,
+	p.proof{
+		margin-top: 15px;
+		font-size: 18px;
+	}
+	p.proof{padding: 20px 0 0 0;}
+	.jumbotron .cta div.phone{
+		font-size: 18px;
+		width: 300px;
+	}
+	.jumbotron .text{
+		padding: 0 0 10px 0;
+	}
+	.jumbotron .cta{
+	  	margin: 20px auto 0 auto;
+  	}
+
+
+
+}
+@media screen and (max-width: 480px) {
+	.jumbotron .container{
+		padding-top:70px;
+		padding-bottom: 30px;
+	}
+	.jumbotron h1,
+	.jumbotron .h1 {
+    	font-size: 24px!important;
+    	margin-bottom: 10px!important;
+  	}
+
+	.jumbotron h2,
+	.jumbotron .h2,
+	.jumbotron .text{
+		font-size: 18px;
+		line-height: 24px;
+		margin-top: 18px;
+		padding: 0 10px;
+	}
+	.jumbotron .text{
+		padding: 0 0 16px 0;
+	}
+	.jumbotron .cta div.phone{
+		font-size: 18px;
+		width: 70%;
+	}
+	p.proof{
+		font-size: 18px;
+		padding: 30px 0 0 0;
+	}
+
+}
+@media screen and (max-width: 410px) {
+	.jumbotron{
+		max-height: 450px;
+		min-height: 450px;
+	}
+	#video-background-mobile {
+		position: absolute;
+		width: 100%;
+		min-height: 450px;
+		z-index: 2;
+		background: #a2c0f3 url(../img/promises-mobile.jpg) center bottom no-repeat;
+		background-size: 100% auto;
+	}
+	.jumbotron h1,
+	.jumbotron .h1 {
+    	font-size: 22px!important;
+    	margin-bottom: 10px!important;
+  	}
+  	.jumbotron .cta{
+	  	margin: 0 auto;
+  	}
+	.jumbotron h2,
+	.jumbotron .h2,
+	.jumbotron .text{
+		font-size: 16px;
+		line-height: 24px;
+		margin-top: 16px;
+		padding: 0 10px;
+	}
+	.jumbotron .text{
+		padding: 0 0 16px 0;
+	}
+	.jumbotron .cta div.phone{
+		font-size: 16px;
+		width: 70%;
+	}
+	.jumbotron .cta{
+	  	margin: 0 auto;
+  	}
+	p.proof{
+		font-size: 16px;
+		padding: 30px 0 0 0;
+	}
+}
+@media screen and (max-width: 320px) {
+	.jumbotron{
+		max-height: 400px;
+		min-height: 400px;
+	}
+	#video-background-mobile {
+		min-height: 400px;
+	}
+	.jumbotron h1,
+	.jumbotron .h1 {
+    	font-size: 18px!important;
+    	margin-bottom: 10px!important;
+  	}
+
+	.jumbotron h2,
+	.jumbotron .h2,
+	.jumbotron .text{
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 5px;
+	}
+	.jumbotron .text{
+		padding: 0 0 10px 0;
+	}
+	.jumbotron .cta div.phone{
+		font-size: 14px;
+		width: 70%;
+	}
+	p.proof{
+		font-size: 14px;
+		padding: 20px 0 0 0;
+	}
+
+
+
+	p.proof i{font-size: 10px;}
+
+}
+
+
+/*Section: Main*/
+#main{
+	background: white 50% 100% no-repeat;
+	position: relative;
+	z-index: 4;
+    height: 100%;
+}

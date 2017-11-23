@@ -1,0 +1,51 @@
+#whychoose{
+    padding: 40px 0 60px 0;
+text-align: center;
+z-index: 6;
+
+}
+
+.bg-grey {
+    background: #E6F7FE!important;
+}
+
+
+
+#whychoose a.arrow-white {
+    color: #fff;
+    background-color: #A6C7CA;
+}
+
+
+
+#whychoose article h3,#whychoose article p {
+    font-size: 14px!important;
+    line-height: 22px!important;
+    display: block;
+}
+
+#whychoose article p {
+    text-align: left;
+    margin-top: 0;
+    color: #6E6E6E;
+}
+
+#whychoose h2{
+    font-family: inherit;
+font-weight: 900;
+line-height: 1.4;
+color: #336E8E;
+}
+
+#whychoose article h3 {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    font-weight: bolder;
+    margin-bottom: 10px!important;
+}
+
+#whychoose a:focus, #whychoose a:hover {
+    color: #5B91AE;
+    text-decoration: underline;
+}

@@ -1,0 +1,93 @@
+#AddictionPortal {
+    background: #f7f7f7;
+    z-index: 2;
+    overflow: visible;
+    border-bottom: 2px solid #ebeaec;
+    padding: 10px;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+#AddictionPortal .portal {
+    position: relative;
+    border: 10px solid #30C5FF;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#AddictionPortal .portal {
+    top: 20px;
+    margin-left: 40px;
+    width: 470px;
+    float: left;
+    margin-top: 0;
+
+}
+
+#AddictionPortal .portal .portal-header {
+    padding: 40px 0 50px;
+    text-align: center;
+    background: #30C5FF;
+}
+#AddictionPortal .portal .portal-header h2 {
+    font-size: 30px;
+    margin: 20px 0 0;
+    padding: 0;
+    font-weight: 800;
+}
+#AddictionPortal .portal .portal-header h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 0 0;
+    padding: 0 20px;
+}
+
+#AddictionPortal .portal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#AddictionPortal .portal ul li {
+    display: block;
+    border-top: 1px solid #30C5FF;
+}
+
+#AddictionPortal .portal ul a, .button {
+    display: block;
+    position: relative;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Lato,Arial,Helvetica,sans-serif;
+    text-align: left;
+    text-decoration: none;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+#AddictionPortal .portal ul a, .button.blue {
+    background: #30C5FF;
+    color: #fff;
+}
+
+#AddictionPortal .portal ul a {
+    padding: 20px 60px 20px 20px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #AddictionPortal .portal {
+    top: 20px;
+    margin-left: 0px;
+    width: 330px;
+    float: left;
+    margin-top: 0;
+}
+
+}

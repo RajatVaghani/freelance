@@ -1,0 +1,37 @@
+.call-now-div {
+    position: static;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 44px 75px;
+    background-color: #FFCE01;
+}
+
+.call-now-container {
+    position: static;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: transparent;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+.call-now-text {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 900;
+}
+
+.call-now-text-bottom {
+    color: #ecf0f1;
+    font-size: 19px;
+    font-weight: 300;
+}
